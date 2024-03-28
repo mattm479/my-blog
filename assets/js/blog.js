@@ -3,10 +3,7 @@ window.onload = function () {
 }
 
 function goBack() {
-    let url = window.location.href;
-    url.replace("blog.html", "index.html");
-
-    window.location.href = url;
+    window.location.back();
 }
 
 function displayBlogEntries() {
