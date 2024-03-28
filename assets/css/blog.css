@@ -1,0 +1,115 @@
+header {
+    display: flex;
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.header-left h1 {
+    font-family: "Segoe Script", sans-serif;
+    margin: auto 0;
+}
+
+.header-right {
+    width: 50%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: right;
+}
+
+#back-button {
+    margin: 5px 5px 10px 5px;
+    padding: 5px;
+    height: 40px;
+}
+
+.light #back-button {
+    background-color: darkblue;
+    color: white;
+}
+
+.dark #back-button {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#blog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blog-entries {
+    display: flex;
+}
+
+.blog-entry {
+    width: 95%;
+    flex: 1;
+    margin: 25px;
+    border: 1px solid gray;
+}
+
+.title {
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.content {
+    margin: 25px 10px;
+    font-style: italic;
+}
+
+.author {
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.link {
+    display: flex;
+}
+
+footer label {
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dark .link a {
+    color: white;
+}
+
+.heart {
+    color: red;
+    font-weight: bolder;
+    margin: 0 5px;
+}

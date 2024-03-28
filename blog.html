@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Blog</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-<header></header>
-<main></main>
-<footer></footer>
-<script src="assets/js/logic.js"></script>
+<body class="light">
+<header>
+    <div class="header-left">
+        <h1>My First Blog</h1>
+    </div>
+    <div class="header-right">
+        <button id="back-button" onclick="goBack();">⬅ Back</button>
+        <div id="theme-toggle">
+            <a id="theme-button" onClick="toggleTheme();"><img src="assets/images/sun.png" alt="Picture of the sun" /></a>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="blog"></section>
+</main>
+<footer>
+    <p>Made with <span class="heart">&hearts;</span> by Matthew Miskov</p>
+    <ul class="links">
+        <li class="link"><label for="portfolio-link">Portfolio: </label><a id="portfolio-link" href="https://mattm479.github.io/my-portfolio/">Matthew Miskov</a></li>
+        <li class="link"><label for="email">Email:</label><a id="email" href="mailto:mattm479@gmail.com">mattm479@gmail.com</a></li>
+    </ul>
+</footer>
 <script src="assets/js/blog.js"></script>
+<script src="assets/js/logic.js"></script>
 </body>
 </html>
