@@ -3,7 +3,7 @@ window.onload = function () {
 }
 
 function goBack() {
-    window.location.back();
+    window.location.replace("index.html");
 }
 
 function displayBlogEntries() {

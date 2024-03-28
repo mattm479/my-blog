@@ -17,14 +17,7 @@ document.getElementById("blog-entry-form").addEventListener("submit", function (
         localStorage.setItem("blog-entries", JSON.stringify(currentEntries));
     }
 
-    let url = window.location.href;
-    const position = url.search("index.html");
+    window.location.replace("blog.html");
 
-    if (position === -1) {
-        url = url + "/blog.html";
-    } else {
-        url.replace("index.html", "blog.html");
-    }
-
-    window.location.href = url;
+    return false;
 });
