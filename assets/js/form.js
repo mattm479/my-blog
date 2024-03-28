@@ -17,5 +17,5 @@ document.getElementById("blog-entry-form").addEventListener("submit", function (
         localStorage.setItem("blog-entries", JSON.stringify(currentEntries));
     }
 
-    window.location.href = "../../blog.html";
+    window.location.href = "blog.html";
 });
