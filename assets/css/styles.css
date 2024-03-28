@@ -1,0 +1,97 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    flex: 1;
+    margin: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.light {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.dark {
+    background-color: darkslategray;
+    color: white;
+}
+
+header {
+    height: 50px;
+    text-align: right;
+}
+
+#theme-button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+img {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#graphic {
+    display: flex;
+}
+
+#blog-graphic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 750px;
+    height: 750px;
+    border-radius: 750px;
+}
+
+#blog-graphic h1 {
+    font-size: 48px;
+}
+
+.light #blog-graphic {
+    background-image: linear-gradient(gold, darkorange);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.dark #blog-graphic {
+    background-image: linear-gradient(antiquewhite, dimgray);
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.light button[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.dark input, .dark textarea {
+    background-color: oldlace;
+}
+
+.dark button[type="submit"] {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.light .blog-entry {
+    box-shadow: 10px 5px 5px gray;
+}
+
+.dark .blog-entry {
+    box-shadow: 10px 5px 5px black;
+}

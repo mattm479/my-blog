@@ -16,4 +16,6 @@ document.getElementById("blog-entry-form").addEventListener("submit", function (
         currentEntries.unshift(blogEntry);
         localStorage.setItem("blog-entries", JSON.stringify(currentEntries));
     }
+
+    window.location.href = "../../blog.html";
 });
